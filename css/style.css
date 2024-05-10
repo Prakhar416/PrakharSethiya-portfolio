@@ -8819,15 +8819,14 @@ h1, h2, h3, h4, h5,
     letter-spacing: 3px;
     text-transform: uppercase; }
   .resume-wrap:hover {
-    background: #ffbd39; }
+    background: #fcbf44; }
     .resume-wrap:hover .date {
       color: #fff; }
     .resume-wrap:hover .position {
       color: #fff; }
     .resume-wrap:hover h2 {
       color: #000000; }
-      /* .resume-wrap:hover h2:after {
-        background: #000000; } */
+
   
 
 .services-1 {
