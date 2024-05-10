@@ -8814,7 +8814,7 @@ h1, h2, h3, h4, h5,
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase; }
-  .resume-wrap .hover {
+  .resume-wrap:hover {
     background-color: #f7f7f7; /* or any other hover background color you prefer */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-5px); /* or any other hover animation you prefer */
