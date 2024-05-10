@@ -1,8 +1,8 @@
-const containers = document.querySelectorAll('.container');
+const resumeWraps = document.querySelectorAll('.resume-wrap');
 
-containers.forEach(container => {
-  container.addEventListener('click', () => {
-    const description = container.querySelector('.description');
+resumeWraps.forEach(resumeWrap => {
+  resumeWrap.addEventListener('click', () => {
+    const description = resumeWrap.querySelector('.description');
     description.style.display = description.style.display === 'none'? 'block' : 'none';
   });
 });
