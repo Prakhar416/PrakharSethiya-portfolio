@@ -8799,6 +8799,7 @@ h1, h2, h3, h4, h5,
   margin-bottom: 30px;
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
+  perspective: 1000px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -8817,7 +8818,7 @@ h1, h2, h3, h4, h5,
   .resume-wrap:hover {
     background-color: rgba(255, 255, 255, 0.1); /* or any other hover background color you prefer */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-15px); /* or any other hover animation you prefer */
+    transform: translateY(-15px) translateZ(20px); /* or any other hover animation you prefer */
   }
   
 
