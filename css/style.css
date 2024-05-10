@@ -8800,6 +8800,9 @@ h1, h2, h3, h4, h5,
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   perspective: 1000px;
+  -webkit-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -8816,10 +8819,15 @@ h1, h2, h3, h4, h5,
     letter-spacing: 3px;
     text-transform: uppercase; }
   .resume-wrap:hover {
-    background-color: #ffbd39; /* or any other hover background color you prefer */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(15px) scale(1.3); /* or any other hover animation you prefer */
-  }
+    background: #ffbd39; }
+    .resume-wrap:hover .date {
+      color: #fff; }
+    .resume-wrap:hover .position {
+      color: #fff; }
+    .resume-wrap:hover h2 {
+      color: #000000; }
+      /* .resume-wrap:hover h2:after {
+        background: #000000; } */
   
 
 .services-1 {
