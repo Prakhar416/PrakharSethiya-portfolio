@@ -8805,8 +8805,7 @@ h1, h2, h3, h4, h5,
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  border-radius: 5px;
-  transition: transform ease 0.5s, box-shadow ease 0.5s; }
+  border-radius: 5px; }
   .resume-wrap .date {
     font-weight: 900;
     font-size: 26px;
@@ -8817,19 +8816,7 @@ h1, h2, h3, h4, h5,
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 3px;
-    text-transform: uppercase; }
-  .resume-wrap:hover {
-    background: #fcbf44;
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25); }
-    .resume-wrap:hover .date {
-      color: #fff; }
-    .resume-wrap:hover .position {
-      color: #fff; }
-    .resume-wrap:hover h2 {
-      color: #000000; }
-
-  
+    text-transform: uppercase; }  
 
 .services-1 {
   margin-bottom: 40px;
