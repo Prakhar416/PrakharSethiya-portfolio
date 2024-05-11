@@ -8872,6 +8872,41 @@ h1, h2, h3, h4, h5,
       .services-1:hover h3:after {
         background: #000000; }
 
+.services-box {
+  cursor: pointer;
+  position: relative;
+}
+
+.services-box .box-content {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.services-box:hover .box-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.services-box .box-content a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.services-box .box-content a:before {
+  content: '\2022';
+  margin-right: 5px;
+}
+
 .progress-wrap {
   width: 100%;
   margin-bottom: 30px; }
