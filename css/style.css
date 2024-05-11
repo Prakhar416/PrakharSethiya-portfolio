@@ -8871,10 +8871,6 @@ h1, h2, h3, h4, h5,
       color: #000000; }
       .services-1:hover h3:after {
         background: #000000; }
-  .services-1:hover.tooltip {
-    display: block; 
-    visibility: visible;
-    opacity: 1; }
 
 .services-box {
   cursor: pointer;
