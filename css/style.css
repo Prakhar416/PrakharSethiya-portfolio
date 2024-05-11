@@ -8884,7 +8884,7 @@ h1, h2, h3, h4, h5,
     background-color: #ffbd39;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 10px;
+    padding: 2em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     visibility: hidden;
     opacity: 0;
