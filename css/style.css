@@ -4881,7 +4881,7 @@ a.close.disabled {
 
 .tooltip {
   position: absolute;
-  z-index: 1070;
+  z-index: 1;
   display: block;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -8869,12 +8869,6 @@ h1, h2, h3, h4, h5,
       display: block; 
       visibility: visible;
       opacity: 1; }
-    /* .services-box .box-content a {
-      display: block;
-      margin-bottom: 5px; }
-    .services-box .box-content a:before {
-      content: '\2022';
-      margin-right: 5px; } */
     .services-1:hover .icon i {
       color: #fff; }
     .services-1:hover h3 {
