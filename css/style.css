@@ -8877,7 +8877,7 @@ h1, h2, h3, h4, h5,
   position: relative;
 }
   .services-box .box-content {
-    position: absolute;
+    position: relative;
     bottom: 100%;
     left: 0;
     width: 100%;
