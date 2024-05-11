@@ -8866,7 +8866,15 @@ h1, h2, h3, h4, h5,
   .services-1:hover {
     background: #ffbd39; }
     .services-1:hover.tooltip {
-      display: block;}
+      display: block; 
+      visibility: visible;
+      opacity: 1; }
+    /* .services-box .box-content a {
+      display: block;
+      margin-bottom: 5px; }
+    .services-box .box-content a:before {
+      content: '\2022';
+      margin-right: 5px; } */
     .services-1:hover .icon i {
       color: #fff; }
     .services-1:hover h3 {
