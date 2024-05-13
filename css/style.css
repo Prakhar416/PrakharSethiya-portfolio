@@ -9486,7 +9486,7 @@ textarea.form-control {
   margin-right: 4px;
   border-radius: 4px;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   font-size: 11px; }
   .tagcloud a:hover {
     border: 1px solid #000; }
