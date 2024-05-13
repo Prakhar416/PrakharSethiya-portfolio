@@ -393,7 +393,7 @@ mark,
     content: "\2014\00A0"; }
 
 .img-fluid {
-  max-width: 100px;
+  max-width: 150px;
   height: auto; }
 
 .img-thumbnail {
