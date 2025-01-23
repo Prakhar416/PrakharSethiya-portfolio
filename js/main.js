@@ -271,11 +271,13 @@
 
   button.addEventListener('click', () => {
 	const filterValue = button.getAttribute('data-filter');
+	console.log(filterValue);
 	projectItems.forEach((project) => {
 	  if (filterValue === 'all') {
 		project.style.display = 'block';
 	  } else {
 		const projectCategory = project.querySelector('.text .project-category').textContent.toLowerCase();
+		console.log(projectCategory);
 		if (projectCategory === filterValue) {
 		  project.style.display = 'block';
 		} else {
