@@ -276,22 +276,17 @@
 	const projectItems = document.querySelectorAll('.project');
 
 	// Add event listener to each filter button
-	filterButtons.forEach((button) => {
 	button.addEventListener('click', () => {
-		// Get the filter value from the button
-		const filterValue = button.getAttribute('data-filter');
-
-		// Filter the project items
-		projectItems.forEach((project) => {
-		const projectCategory = project.querySelector('.project-category').textContent.toLowerCase();
-		if (filterValue === 'all' || projectCategory === filterValue) {
-			project.style.display = 'block';
-		} else {
-			project.style.display = 'none';
-		}
-		});
-	});
-	});
+  const filterValue = button.getAttribute('data-filter');
+  projectItems.forEach((project) => {
+    const projectCategory = project.querySelector('.text .project-category').textContent.toLowerCase();
+    if (filterValue === 'all' || projectCategory === filterValue) {
+      project.style.display = 'block';
+    } else {
+      project.style.display = 'none';
+    }
+  });
+});
 
 
 
