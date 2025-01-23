@@ -3353,6 +3353,20 @@ input[type="button"].btn-block {
       -o-transition: none;
       transition: none; } }
 
+.project-filter {
+  margin-bottom: 20px;
+}
+.project-filter select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+.project-category {
+  font-size: 14px;
+  color: #666;
+}
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9685,3 +9699,4 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+

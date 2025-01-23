@@ -269,7 +269,21 @@
     fixedContentPos: false
   });
 
+// Project filter
+const projectFilterSelect = document.getElementById('project-filter-select');
+const projectItems = document.querySelectorAll('.project');
 
+projectFilterSelect.addEventListener('change', () => {
+  const selectedCategory = projectFilterSelect.value;
+  projectItems.forEach((project) => {
+    const projectCategory = project.querySelector('.project-category').textContent;
+    if (selectedCategory === 'all' || projectCategory === selectedCategory) {
+      project.style.display = 'block';
+    } else {
+      project.style.display = 'none';
+    }
+  });
+});
 
 
 
