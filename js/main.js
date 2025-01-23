@@ -269,24 +269,21 @@
     fixedContentPos: false
   });
 
-	// Get the filter buttons
-	const filterButtons = document.querySelectorAll('.project-filter button');
-
-	// Get the project items
-	const projectItems = document.querySelectorAll('.project');
-
-	// Add event listener to each filter button
-	button.addEventListener('click', () => {
-  const filterValue = button.getAttribute('data-filter');
-  projectItems.forEach((project) => {
-    const projectCategory = project.querySelector('.text .project-category').textContent.toLowerCase();
-    if (filterValue === 'all' || projectCategory === filterValue) {
-      project.style.display = 'block';
-    } else {
-      project.style.display = 'none';
-    }
+  button.addEventListener('click', () => {
+	const filterValue = button.getAttribute('data-filter');
+	projectItems.forEach((project) => {
+	  if (filterValue === 'all') {
+		project.style.display = 'block';
+	  } else {
+		const projectCategory = project.querySelector('.text .project-category').textContent.toLowerCase();
+		if (projectCategory === filterValue) {
+		  project.style.display = 'block';
+		} else {
+		  project.style.display = 'none';
+		}
+	  }
+	});
   });
-});
 
 
 
