@@ -269,19 +269,6 @@
     fixedContentPos: false
   });
 
-  button.addEventListener('click', () => {
-	const filterValue = button.getAttribute('data-filter');
-	projectItems.forEach((project) => {
-	  const projectCategory = project.querySelector('.project-category').textContent.toLowerCase();
-	  if (filterValue === 'all' || projectCategory === filterValue) {
-		project.style.display = 'block';
-	  } else {
-		project.style.display = 'none';
-	  }
-	});
-  });
-
-
 
 })(jQuery);
 
