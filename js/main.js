@@ -269,6 +269,12 @@
     fixedContentPos: false
   });
 
+
+
+
+
+})(jQuery);
+
 // Project filter
 const projectFilterSelect = document.getElementById('project-filter-select');
 const projectItems = document.querySelectorAll('.project');
@@ -284,8 +290,3 @@ projectFilterSelect.addEventListener('change', () => {
     }
   });
 });
-
-
-
-})(jQuery);
-
