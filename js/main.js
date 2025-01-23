@@ -269,24 +269,31 @@
     fixedContentPos: false
   });
 
+	// Get the filter buttons
+	const filterButtons = document.querySelectorAll('.project-filter button');
 
+	// Get the project items
+	const projectItems = document.querySelectorAll('.project');
+
+	// Add event listener to each filter button
+	filterButtons.forEach((button) => {
+	button.addEventListener('click', () => {
+		// Get the filter value from the button
+		const filterValue = button.getAttribute('data-filter');
+
+		// Filter the project items
+		projectItems.forEach((project) => {
+		const projectCategory = project.querySelector('.project-category').textContent.toLowerCase();
+		if (filterValue === 'all' || projectCategory === filterValue) {
+			project.style.display = 'block';
+		} else {
+			project.style.display = 'none';
+		}
+		});
+	});
+	});
 
 
 
 })(jQuery);
 
-// Project filter
-const projectFilterSelect = document.getElementById('project-filter-select');
-const projectItems = document.querySelectorAll('.project');
-
-projectFilterSelect.addEventListener('change', () => {
-  const selectedCategory = projectFilterSelect.value;
-  projectItems.forEach((project) => {
-    const projectCategory = project.querySelector('.project-category').textContent;
-    if (selectedCategory === 'all' || projectCategory === selectedCategory) {
-      project.style.display = 'block';
-    } else {
-      project.style.display = 'none';
-    }
-  });
-});
